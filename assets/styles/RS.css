@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Sección de Iniciativas Inclusivas */
+.initiatives-section {
+    background: linear-gradient(to right, #000046, #1cb5e0); /* Gradiente de fondo */
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    color: #333;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    color: #000000 !important;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 2);
+}
+
+.txt1 {
+    color: white !important;
+}
+
+.subt {
+    color: #ff0000 !important;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.initiatives-section h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.initiatives-section p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contenedor de iniciativas */
+.initiatives-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+/* Estilo de los elementos de iniciativa */
+.initiative-item {
+    background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: calc(50% - 15px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+/* Ajustes de caja */
+.initiative-item {
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Bordes para dar aspecto de caja */
+}
+
+.initiative-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Ajustes de alineación de las cajas */
+.initiative-item.right {
+    margin-left: auto;
+}
+
+.initiative-item.left {
+    margin-right: auto;
+}
+
+/* Ajustes para las imágenes dentro de las iniciativas */
+.initiative-item img {
+    max-width: 100%;  /* Asegura que las imágenes no excedan el contenedor */
+    height: auto;     /* Mantiene la proporción de aspecto */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente si es necesario */
+}
+
+.txt2 {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .initiatives-section {
+        padding: 50px 10px; /* Relleno ajustado */
+    }
+
+    .initiatives-section h2 {
+        font-size: 1.5rem; /* Tamaño más pequeño para encabezados */
+        margin-bottom: 15px; /* Espacio reducido */
+    }
+
+    .initiatives-section p {
+        font-size: 1rem; /* Tamaño más pequeño para párrafos */
+        margin-bottom: 20px; /* Espacio reducido */
+    }
+
+    .initiatives-container {
+        flex-direction: column; /* Apilar elementos verticalmente */
+        gap: 20px; /* Espaciado entre elementos */
+    }
+
+    .initiative-item {
+        width: 100%; /* Cada caja ocupa el 100% del ancho */
+        padding: 20px; /* Relleno reducido */
+    }
+}
+
+@media (max-width: 900px) {
+    .initiatives-section {
+        padding: 70px 20px;
+    }
+
+    .initiatives-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .initiatives-section p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .initiatives-container {
+        flex-direction: column; /* Apilar elementos verticalmente */
+        gap: 30px; /* Espaciado entre elementos */
+    }
+
+    .initiative-item {
+        width: 100%; /* Cada caja ocupa el 100% del ancho */
+        padding: 25px; /* Relleno ajustado */
+    }
+}
+
+/* Para pantallas grandes (escritorios) */
+@media (min-width: 901px) {
+    .initiatives-section {
+        padding: 100px 20px; /* Relleno original */
+    }
+
+    .initiatives-section h2 {
+        font-size: 3rem; /* Tamaño grande para encabezados */
+        margin-bottom: 20px; /* Espacio original */
+    }
+
+    .initiatives-section p {
+        font-size: 1.2rem; /* Tamaño original para párrafos */
+    }
+
+    .initiatives-container {
+        flex-direction: column; /* Apilar elementos verticalmente */
+        gap: 30px; /* Espaciado entre elementos */
+    }
+
+    .initiative-item {
+        width: 100%; /* Cada caja ocupa el 100% del ancho */
+        padding: 30px; /* Relleno ajustado */
+    }
+}
+
+/* FI
+
+/* Sección de Colaboraciones */
+.collaborations-section {
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    color: #333;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titl-conla {
+    font-size: 4rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo de los elementos de colaboración */
+.collaboration-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.txt2 {
+    font-size: 1.2rem;
+}
+
+/* Imagenes en la sección de colaboración */
+.collaboration-image {
+    width: 250px; /* Ajusta según el tamaño de tu imagen */
+    height: auto;
+    margin: 0 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collaboration-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto en la sección de colaboración */
+.collaboration-text {
+    flex: 1;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.collaboration-text:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-10px);
+}
+
+h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.left {
+    order: 1;
+}
+
+.right {
+    order: 2;
+}
+
+@media (max-width: 1200px) {
+    .titl-conla {
+        font-size: 3rem; /* Tamaño más pequeño para el título */
+    }
+
+    .collaboration-item {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .collaboration-image {
+        width: 200px; /* Ajusta el tamaño de la imagen */
+        margin: 10px 0; /* Espaciado vertical */
+    }
+
+    .collaboration-text {
+        padding: 15px; /* Reduce el padding */
+    }
+
+    h3 {
+        font-size: 1.5rem; /* Tamaño más pequeño para h3 */
+    }
+
+    p {
+        font-size: 0.9rem; /* Tamaño más pequeño para párrafos */
+    }
+}
+
+@media (max-width: 800px) {
+    .titl-conla {
+        font-size: 2.5rem; /* Tamaño más pequeño para el título */
+    }
+
+    .collaboration-image {
+        width: 180px; /* Ajusta el tamaño de la imagen */
+    }
+
+    h3 {
+        font-size: 1.3rem; /* Tamaño más pequeño para h3 */
+    }
+
+    p {
+        font-size: 0.8rem; /* Tamaño más pequeño para párrafos */
+    }
+}
+
+@media (max-width: 600px) {
+    .titl-conla {
+        font-size: 2rem; /* Tamaño más pequeño para el título */
+    }
+
+    .collaboration-item {
+        margin-bottom: 30px; /* Reduce el margen inferior */
+    }
+
+    .collaboration-image {
+        width: 150px; /* Ajusta el tamaño de la imagen */
+    }
+
+    h3 {
+        font-size: 1.2rem; /* Tamaño más pequeño para h3 */
+    }
+
+    p {
+        font-size: 0.7rem; /* Tamaño más pequeño para párrafos */
+    }
+}
+

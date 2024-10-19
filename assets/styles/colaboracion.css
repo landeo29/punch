@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.donaciones-apoyo {
+    position: relative;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+    padding: 150px 350px; /* Ajustado para mejor visualización en pantallas pequeñas */
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto; /* Sin márgenes grandes */
+}
+
+.donaciones-apoyo .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 2;
+    margin: 0; /* Eliminamos separación superior e inferior */
+}
+
+.donaciones-apoyo h1, .seccion-apoyo h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.donaciones-apoyo p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.donaciones-apoyo h1 {
+    text-align: center;
+    color: #000000;
+    text-shadow: 0 0 20px rgba(255,255,255,2);
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0; /* Sin separación extra inferior */
+    padding: 0; /* Sin espacio interno innecesario */
+}
+
+.donaciones, .apoyo-corporativo {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px 0; /* Reducimos los márgenes */
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: flex-start;
+}
+
+.content-left {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.content-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content-right {
+    flex: 2;
+    text-align: left;
+    padding: 0 10px; /* Espacio reducido */
+}
+
+.donaciones h2, .apoyo-corporativo h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.donaciones p, .apoyo-corporativo p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.donaciones ul, .apoyo-corporativo ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.donaciones ul li, .apoyo-corporativo ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.donaciones h3, .apoyo-corporativo h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.seccion-apoyo {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; /* Sin separación innecesaria arriba o abajo */
+}
+
+.seccion-apoyo h2 {
+    color: #ffdb58;
+}
+
+.seccion-apoyo p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.section-collaborate {
+    background: linear-gradient(to right, #5c258d, #4389a2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 50px 30px; /* Padding más controlado */
+    margin: 0 auto; /* Eliminamos separación extra */
+    border-radius: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    color: #000000;
+    text-shadow: 0 0 20px rgba(255,255,255,2);
+}
+
+.section-collaborate h2 {
+    font-size: 2.8rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.section-collaborate p {
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #e8e8e8;
+    margin-bottom: 20px;
+}
+
+.collaborate-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.collaborate-item {
+    flex: 1 1 calc(48% - 20px); /* Permitir que ocupen el 48% del ancho disponible con espacio para el margen */
+    background: #ffffff;
+    padding: 30px; /* Mantén el padding para espacio interno */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px 0; /* Márgenes pequeños */
+}
+
+.collaborate-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.collaborate-item h3 {
+    font-size: 2rem;
+    color: #007acc;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.collaborate-item p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.collaborate-item ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.collaborate-item ul li {
+    list-style: disc;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-collaborate .final-note {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 0 0 20px rgb(2, 255, 255);
+}
+
+.collaborate-button {
+    background: #007acc; /* Color de fondo */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    display: inline-block; /* Comportamiento de bloque en línea */
+    transition: background 0.3s; /* Transición de fondo */
+}
+
+.collaborate-button:hover {
+    background: #005f8c; /* Color de fondo al pasar el mouse */
+}
+
+.last-collaborate-item {
+    flex: 1 1 100%; /* Ocupará toda la fila */
+    display: flex;
+    justify-content: center; /* Centra la tarjeta en el medio */
+    margin-top: 20px; /* Espacio extra superior si es necesario */
+}
+
+.last-collaborate-item .collaborate-item {
+    flex: 1; /* Para que ocupe el 100% del ancho disponible en su fila */
+}
+
+/* Media Query para pantallas medianas (tabletas en modo horizontal) */
+@media (max-width: 1024px) {
+    .donaciones-apoyo {
+        padding: 80px 50px;
+    }
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .donaciones, .apoyo-corporativo {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .collaborate-list {
+        flex-direction: column; /* Tarjetas en columna */
+    }
+    .collaborate-item {
+        width: 100%; /* Asegura que las tarjetas ocupen el 100% del ancho */
+        margin-bottom: 20px; /* Espaciado entre las tarjetas */
+    }
+    .final-note {
+        font-size: 2.5rem;
+    }
+}
+
+/* Media Query para pantallas pequeñas (tabletas en modo vertical y móviles grandes) */
+@media (max-width: 768px) {
+    .donaciones-apoyo {
+        padding: 60px 30px;
+    }
+    .donaciones-apoyo h1, .seccion-apoyo h2 {
+        font-size: 2rem;
+    }
+    .donaciones, .apoyo-corporativo {
+        padding: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .collaborate-list {
+        flex-direction: column; /* Tarjetas en columna */
+    }
+    .collaborate-item {
+        width: 100%; /* Asegura que las tarjetas ocupen el 100% del ancho */
+        margin-bottom: 20px; /* Espaciado entre las tarjetas */
+    }
+    .final-note {
+        font-size: 2rem;
+    }
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .donaciones-apoyo {
+        padding: 40px 20px;
+    }
+    .donaciones-apoyo h1, .seccion-apoyo h2 {
+        font-size: 1.5rem;
+    }
+    .donaciones, .apoyo-corporativo {
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .collaborate-item h3 {
+        font-size: 1.5rem; /* Ajustar tamaño de fuente para dispositivos pequeños */
+    }
+    .final-note {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Diversidad e Inclusión */
+.diversity-inclusion {
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #085078, #85d8ce);
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Título de la sección */
+.section-title {
+    font-size: 3rem;
+    color: #2c3e50;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Contenedor de contenido */
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Caja con burbujas */
+.bubble-box {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    border: 3px solid #ff0000;
+}
+
+/* Contenido dentro de la caja */
+.bubble-content {
+    position: relative;
+    z-index: 2;
+    color: #333;
+    text-align: left;
+}
+
+.bubble-content p {
+    font-size: 1.2rem;
+}
+
+/* Burbujas */
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0, 150, 255, 0.2);
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 10px rgba(0, 150, 255, 0.3);
+    animation: bubbleMove 10s infinite;
+}
+
+.bubble:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+.bubble:nth-child(2) { top: 50%; left: 40%; animation-delay: 2s; }
+.bubble:nth-child(3) { top: 30%; left: 60%; animation-delay: 4s; }
+.bubble:nth-child(4) { top: 20%; left: 80%; animation-delay: 6s; }
+.bubble:nth-child(5) { top: 70%; left: 30%; animation-delay: 8s; }
+
+@keyframes bubbleMove {
+    0% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-50px) scale(1.1); }
+    100% { transform: translateY(0) scale(1); }
+}
+
+/* Imagen al lado */
+.image-side {
+    width: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.image-side img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto de Fondo Interactivo */
+.bg-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: linear-gradient(135deg, rgba(255, 223, 186, 0.5), rgba(186, 255, 233, 0.5));
+    background-size: 200% 200%;
+    animation: bg-move 10s ease infinite;
+}
+
+@keyframes bg-move {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+
+/* Nuestro Equipo */
+.team-section {
+    padding: 100px 20px;
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenido del equipo */
+.team-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Bloque del equipo */
+.team-item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+/* Contenido interior */
+.team-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.team-item:hover .team-inner {
+    transform: rotateY(180deg);
+}
+
+/* Parte frontal del bloque */
+.team-front, .team-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.team-front {
+    background: #ffffff;
+    border: 3px solid #ff0000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título y imagen del equipo */
+.team-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.team-image {
+    width: 80%;
+    height: auto;
+    max-height: 160px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Parte trasera del bloque */
+.team-back {
+    background: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+}
+
+
+/* Media Queries */
+
+/* Mobile Devices: up to 480px */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2rem; /* Ajustar tamaño de título */
+    }
+
+    .bubble-content p {
+        font-size: 1rem; /* Reducir tamaño de texto en contenido de burbujas */
+    }
+
+    .image-side {
+        width: 100%; /* Ancho completo en pantallas móviles */
+        text-align: center; /* Centrar texto */
+        margin-top: 20px; /* Espaciado superior */
+    }
+
+    .image-side img {
+        width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+        height: auto; /* Mantener proporciones de la imagen */
+        max-height: 250px; /* Limitar la altura máxima para evitar deformaciones */
+    }
+
+    .team-item {
+        width: 90%; /* Ancho más pequeño para dispositivos móviles */
+    }
+
+    .team-title {
+        font-size: 1.2rem; /* Reducir tamaño de título en equipo */
+    }
+}
+
+/* Tablets: up to 768px */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Reducir padding en contenedor */
+    }
+
+    .content-wrapper {
+        flex-direction: column; /* Cambiar a columna en pantallas más pequeñas */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .bubble-box {
+        padding: 15px; /* Reducir padding en la caja de burbujas */
+    }
+
+    .bubbles {
+        display: none; /* Ocultar burbujas en pantallas más pequeñas */
+    }
+
+    .team-content {
+        gap: 20px; /* Reducir espacio entre los elementos del equipo */
+    }
+
+    .team-item {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+
+    .team-image {
+        max-height: 140px; /* Limitar altura de las imágenes del equipo */
+        width: auto; /* Mantener proporciones */
+    }
+}
+
+/* Desktops: from 769px to 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .section-title {
+        font-size: 2.5rem; /* Ajustar tamaño de título */
+    }
+
+    .bubble-content p {
+        font-size: 1.1rem; /* Ajustar tamaño de texto en contenido de burbujas */
+    }
+
+    .image-side {
+        width: 40%; /* Ajustar ancho en pantallas medianas */
+    }
+
+    .image-side img {
+        width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+        height: auto; /* Mantener proporciones de la imagen */
+    }
+
+    .team-item {
+        width: 250px; /* Ajustar ancho de los elementos del equipo */
+    }
+
+    .team-image {
+        max-height: 160px; /* Limitar altura de las imágenes del equipo */
+        width: auto; /* Mantener proporciones */
+    }
+}
+
+/* Large Desktops: 1201px and up */
+@media (min-width: 1201px) {
+    .section-title {
+        font-size: 3rem; /* Tamaño de título para pantallas grandes */
+    }
+
+    .image-side {
+        width: 30%; /* Cambiar ancho para pantallas grandes */
+    }
+
+    .image-side img {
+        width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+        height: auto; /* Mantener proporciones de la imagen */
+    }
+
+    .team-item {
+        width: 300px; /* Ajustar ancho para elementos del equipo */
+    }
+
+    .team-image {
+        max-height: 180px; /* Limitar altura de las imágenes del equipo */
+        width: auto; /* Mantener proporciones */
+    }
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="./assets/img/ico.png" >
+    <title>PUNCHALL</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/nav-ft.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/ico.png" />
+            </a>
+            <p><b>PUNCHALL</b></p>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="./Templates/SobreNosotros.html">Sobre Nosotros</a></li>
+            <li><a href="./Templates/Servicios.html">Servicios</a></li>
+            <li><a href="./Templates/equipo.html">Equipo</a></li>
+            <li><a href="./Templates/ResponsabilidadSocial.html">Responsabilidad Social</a></li>
+            <li><a href="./Templates/Colaboracion.html">Oportunidad de Colaboración</a></li>
+            <li><a href="./Templates/Contacto.html">Contacto</a></li>
+            <li><a href="./Templates/PF.html">Preguntas Frecuentes</a></li>
+        </ul>
+        <div class="color-mode-container">
+            <select id="colorMode" class="color-mode-select">
+                <option value="normal">Modo Normal</option>
+                <option value="deuteranopia">Deuteranopía</option>
+                <option value="protanopia">Protanopía</option>
+                <option value="tritanopia">Tritanopía</option>
+            </select>
+        </div>
+        <div class="burger" id="burger" onclick="toggleMenu()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+
+    </nav>
+</header>
+
+
+<!-- carrusel-->
+
+<div class="carousel">
+    <div class="carousel-slide">
+        <div class="carousel-item">
+            <div class="carousel-content">
+                <h2>Hola,</h2>
+                <p><b>Te invito a explorar nuestro sitio y a conocer más sobre cómo Punchall</b></p>
+                    <p>está haciendo una diferencia en el mundo de la tecnología.</b> </p>
+                <button><a href="./Templates/Colaboracion.html"><b>Colabora con nosotros</b></a></button>
+            </div>
+            <img src="assets/img/SN.png" alt="Señalador 1" class="señalador">
+        </div>
+        <div class="carousel-background" style="background-image: url('assets/img/C1.jpg');"></div>
+    </div>
+
+    <div class="carousel-slide">
+        <div class="carousel-item">
+            <div class="carousel-content">
+                <h2></h2>
+                <p><b>Nos esforzamos por ofrecer servicios de alta calidad y accesibilidad,</b></p>
+                <p><b>asegurándonos de que nuestras soluciones sean innovadoras y útiles para una amplia gama de usuarios</b></p>
+                <button> <a href="./Templates/Servicios.html"><b>Adquiere Nuestros Servicios</b></a></button>
+            </div>
+            <img src="assets/img/SN.png" alt="Señalador 2" class="señalador">
+        </div>
+        <div class="carousel-background" style="background-image: url('assets/img/C2.jpg');"></div>
+    </div>
+
+    <div class="carousel-slide">
+        <div class="carousel-item">
+            <div class="carousel-content">
+                <h2></h2>
+                <p>Gracias por tu interés y apoyo en nuestra misión de </p>
+                <p>construir un futuro más inclusivo y accesible para todos.</p>
+                <button><a href="./Templates/Contacto.html"><b>Contactanos</b></a></button>
+            </div>
+            <img src="assets/img/SN.png" alt="Señalador 3" class="señalador">
+        </div>
+        <div class="carousel-background" style="background-image: url('assets/img/C3.jpg');"></div>
+    </div>
+</div>
+
+<!--fin carrusel-->
+
+<!----PR------>
+<!-- Sección de presentación -->
+<section id="presentation" class="presentation-section">
+    <div class="presentation-background"></div>
+    <div class="presentation-content">
+        <div class="text-overlay">
+            <h2 class="heading">Presentación</h2>
+            <div class="text-layer">
+                <p>En Punchall, estamos dedicados a construir un futuro donde la tecnología no solo sea innovadora, sino también accesible para todos. Somos un equipo apasionado de ingenieros que cree en el poder transformador de la inclusión. Nuestro enfoque se basa en proporcionar soluciones tecnológicas de alta calidad, desde el desarrollo de software hasta la creación de aplicaciones móviles y páginas web, todo mientras promovemos un entorno de trabajo inclusivo.</p>
+            </div>
+            <div class="text-layer">
+                <p>En Punchall, no solo desarrollamos tecnología; construimos oportunidades. Nos enorgullece contratar a personas con diversas capacidades, quienes aportan habilidades únicas y perspectivas valiosas que enriquecen nuestro trabajo.</p>
+                <p>Cada proyecto que emprendemos está diseñado para no solo cumplir con las expectativas de nuestros clientes, sino para superar los estándares de accesibilidad y calidad.</p>
+            </div>
+            <p class="cta"><b>Explora nuestro sitio para conocer más sobre cómo estamos haciendo la diferencia en el mundo de la tecnología y cómo puedes unirte a nuestra misión de crear un entorno inclusivo y accesible para todos.</b></p>
+            <a href="./Templates/SobreNosotros.html" class="btn-learn-more"><b>Conoce Nuestra Historia</b></a>
+        </div>
+    </div>
+</section>
+<!----FIN PR------>
+
+
+<!-- Visión y Misión -->
+<section class="vision-mission">
+    <div class="container">
+        <h2 class="section-title1"><b>Visión y Misión</b></h2>
+
+        <div class="vision-mission-cards">
+            <!-- Tarjeta Visión -->
+            <div class="vision-mission-card vision">
+                <div class="card-image">
+                    <img src="./assets/img/MS/1.png" alt="Visión">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Visión</h3>
+                    <p>
+                        Convertirnos en un referente mundial en el desarrollo de soluciones tecnológicas de alta calidad, donde la inclusión y la diversidad son el motor que impulsa la innovación continua. Queremos demostrar que los equipos diversos son clave para desarrollar productos que marquen la diferencia en el mercado.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tarjeta Misión -->
+            <div class="vision-mission-card mission">
+                <div class="card-image">
+                    <img src="./assets/img/MS/2.png" alt="Misión">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Misión</h3>
+                    <p>
+                        Desarrollar soluciones tecnológicas que sean sinónimo de calidad, fiabilidad e innovación, guiados por un equipo de ingenieros que refleja la diversidad y la riqueza de la sociedad. Nuestro compromiso es ofrecer productos y servicios que superen los estándares del mercado, mientras proporcionamos oportunidades laborales y de desarrollo profesional a personas con discapacidades, demostrando que la inclusión es la base de nuestra excelencia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FIN Visión y Misión -->
+
+
+<!------SKILLS--------->
+
+<section class="skills-section">
+    <h2 class="skills-title">Stack Tecnológico</h2>
+    <div class="skills-container">
+        <div class="skill-card">
+            <img src="./assets/img/skills/1.png" alt="JavaScript">
+        </div>
+        <div class="skill-card">
+            <img src="./assets/img/skills/2.png" alt="Python">
+        </div>
+        <div class="skill-card">
+            <img src="./assets/img/skills/3.png" alt="Java">
+        </div>
+        <div class="skill-card">
+            <img src="./assets/img/skills/4.png" alt="PHP">
+        </div>
+        <div class="skill-card">
+            <img src="./assets/img/skills/5.png" alt="C#">
+        </div>
+        <div class="skill-card">
+            <img src="./assets/img/skills/6.png" alt="C++">
+        </div>
+        <div class="skill-card">
+            <img src="./assets/img/skills/7.png" alt="Ruby">
+        </div>
+        <div class="skill-card">
+            <img src="./assets/img/skills/8.png" alt="HTML5">
+        </div>
+        <div class="skill-card">
+            <img src="./assets/img/skills/9.png" alt="CSS3">
+        </div>
+        <div class="skill-card">
+            <img src="./assets/img/skills/10.png" alt="Go">
+        </div>
+        <div class="skill-card">
+            <img src="./assets/img/skills/11.png" alt="Swift">
+        </div>
+        <div class="skill-card">
+            <img src="./assets/img/skills/12.png" alt="TypeScript">
+        </div>
+    </div>
+</section>
+
+<!------FIN SKILLS--------->
+
+<!----Servicios----->
+<!-- Sección de Servicios -->
+<!-- Sección de Servicios -->
+<section class="services-section">
+    <div class="container">
+        <h2 class="ttS">Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-content">
+                    <h3>Desarrollo de Software Personalizado</h3>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-content">
+                    <h3>Desarrollo de Aplicaciones Móviles</h3>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-content">
+                    <h3>Creación de Páginas Web</h3>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-content">
+                    <h3>Consultoría en Administración de Páginas Web</h3>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-content">
+                    <h3>Consultoría en Accesibilidad</h3>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-content">
+                    <h3>Soporte y Mantenimiento</h3>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-content">
+                    <h3>Innovación y Desarrollo Tecnológico</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Botón de exploración -->
+        <div class="explore-button-container">
+            <a href="./Templates/Servicios.html" class="explore-button"><b>Explora más de nuestros servicios</b></a>
+        </div>
+    </div>
+</section>
+
+<!----Fin Servicios----->
+<!----Colab---->
+<!-- Sección de Donación y Apoyo -->
+<section class="donation-section">
+    <div class="container">
+        <h2>Ayúdanos a Hacer la Diferencia</h2>
+        <p>En PUNCHALL, creemos en el poder de la tecnología para transformar vidas. Tu apoyo nos ayuda a impulsar la inclusión y la accesibilidad para todos. Con tu contribución, podemos seguir desarrollando soluciones innovadoras y accesibles para personas con discapacidad.</p>
+        <div class="donation-images">
+            <img src="./assets/img/P_dont/1.png" alt="Imagen de Apoyo 1" class="donation-image">
+            <img src="./assets/img/P_dont/2.png" alt="Imagen de Apoyo 2" class="donation-image">
+            <img src="./assets/img/P_dont/3.png" alt="Imagen de Apoyo 3" class="donation-image">
+        </div>
+        <a href="./Templates/Colaboracion.html" class="donate-button"><b>Contribuye Ahora</b></a>
+    </div>
+</section>
+
+<!-----Fin Colab--->
+<!----FOOTER------>
+<footer class="footer__container">
+    <div class="footer__content">
+        <div class="footer__logo">
+            <a href="index.html"><img src="assets/img/ico.png" alt="Punchall Logo">
+                </a>
+            <p class="paf">Punchall</p>
+        </div>
+        <div class="footer__links">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./Templates/SobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a href="./Templates/Servicios.html">Servicios</a></li>
+                <li><a href="./Templates/Contacto.html">Contacto</a></li>
+                <li><a href="./Templates/PF.html">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+        <div class="footer__services">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="./Templates/Servicios.html">Desarrollo de Software</a></li>
+                <li><a href="./Templates/Servicios.html">Aplicaciones Móviles</a></li>
+                <li><a href="./Templates/Servicios.html">Creación de Páginas Web</a></li>
+                <li><a href="./Templates/Servicios.html">Consultoría</a></li>
+                <li><a href="./Templates/Servicios.html">Soporte</a></li>
+
+            </ul>
+        </div>
+        <div class="footer__services">
+            <h4>Responsabilidad Social</h4>
+            <ul>
+                <li><a href="./Templates/equipo.html">Diversidad e Inclusión</a></li>
+                <li><a href="./Templates/equipo.html#nuestroequipo">Nuestro Equipo</a></li>
+                <li><a href="./Templates/ResponsabilidadSocial.html">Iniciativas</a></li>
+                <li><a href="./Templates/Colaboracion.html#donacion">Donaciones</a></li>
+                <li><a href="./Templates/Colaboracion.html#comocolaborar">Cómo Colaborar</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__social">
+            <h4>Síguenos</h4>
+            <div class="social__icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/punchall-sac-7a2020332/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/51934082901" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__bottom">
+        <p>&copy; 2024 Punchall. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<!----FIN FOOTER------>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

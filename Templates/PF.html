@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="../assets/img/ico.png" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/styles/nav-ft.css">
+  <link rel="stylesheet" href="../assets/styles/pf.css">
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <title>Preguntas Frecuentes</title>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../assets/img/ico.png"/>
+      </a>
+
+      <p CLASS="txtT">PUNCHALL</p>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+      <li><a href="Servicios.html">Servicios</a></li>
+      <li><a href="equipo.html">Equipo</a></li>
+      <li><a href="ResponsabilidadSocial.html">Responsabilidad Social</a></li>
+      <li><a href="Colaboracion.html">Oportunidad de Colaboración</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+      <li><a href="PF.html">Preguntas Frecuentes</a></li>
+    </ul>
+    <div class="color-mode-container">
+      <select id="colorMode" class="color-mode-select">
+        <option value="normal">Modo Normal</option>
+        <option value="deuteranopia">Deuteranopía</option>
+        <option value="protanopia">Protanopía</option>
+        <option value="tritanopia">Tritanopía</option>
+      </select>
+    </div>
+    <div class="burger" id="burger" onclick="toggleMenu()">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+  </nav>
+</header>
+
+<section class="faqs-section">
+  <div class="faqs-content">
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Qué es Punchall?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Pregunta" class="faq-icon">
+      </div>
+      <p>Punchall es una empresa tecnológica especializada en el desarrollo de software, aplicaciones móviles y sitios web, con un enfoque inclusivo. Nuestro equipo está compuesto principalmente por profesionales con habilidades diversas, lo que nos permite abordar cada proyecto con una perspectiva única y enriquecedora.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Qué servicios ofrece Punchall?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Servicios" class="faq-icon">
+      </div>
+      <p>Ofrecemos servicios de desarrollo de software a medida, creación de aplicaciones móviles, diseño y desarrollo de sitios web, consultoría en administración de páginas web, actualización de certificados SSL, configuración de correos electrónicos corporativos, y mucho más. Nos especializamos en soluciones accesibles y de alta calidad.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Cómo asegura Punchall la calidad de sus soluciones?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Calidad" class="faq-icon">
+      </div>
+      <p>La calidad es una prioridad para Punchall. Cada proyecto pasa por un riguroso proceso de desarrollo y revisión para garantizar que cumpla con los más altos estándares. Trabajamos en estrecha colaboración con nuestros clientes para asegurarnos de que las soluciones sean precisas, funcionales y alineadas con sus necesidades.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Cómo fomenta Punchall la inclusión dentro de la empresa?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Inclusión" class="faq-icon">
+      </div>
+      <p>Punchall se enorgullece de ser una empresa inclusiva que contrata principalmente a personas con habilidades diversas. Valoramos la diversidad como un motor clave para la innovación y creamos un ambiente de trabajo donde todos pueden desarrollarse y contribuir plenamente.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Cómo puedo colaborar con Punchall en un proyecto?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Colaboración" class="faq-icon">
+      </div>
+      <p>Puedes contactarnos a través de nuestro formulario en la página web o enviarnos un correo electrónico a <a href="mailto:info@punchall.com">info@punchall.com</a>. Nuestro equipo se pondrá en contacto contigo para discutir tus necesidades y cómo podemos ayudarte a llevar tu proyecto al siguiente nivel.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Ofrecen servicios de consultoría en accesibilidad?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Consultoría" class="faq-icon">
+      </div>
+      <p>Sí, ofrecemos servicios de consultoría especializados en accesibilidad digital. Ayudamos a empresas y organizaciones a crear productos y servicios accesibles para personas con diversas capacidades, desde la evaluación de la accesibilidad de sitios web hasta el diseño inclusivo de aplicaciones y plataformas.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Qué tipos de proyectos ha realizado Punchall en el pasado?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Proyectos" class="faq-icon">
+      </div>
+      <p>Hemos trabajado en una variedad de proyectos, incluyendo el desarrollo de aplicaciones móviles, plataformas de gestión de salud, y la implementación de infraestructuras de TI para municipalidades. También hemos liderado campañas de crowdfunding para financiar espacios de trabajo accesibles y colaborado con organizaciones en la creación de recursos educativos inclusivos.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Cómo se refleja la inclusión en los productos de Punchall?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Inclusión en Productos" class="faq-icon">
+      </div>
+      <p>En todos nuestros servicios, la inclusión se integra desde el diseño hasta la implementación final. Nos aseguramos de que nuestras soluciones sean accesibles para personas con diversas capacidades, utilizando las mejores prácticas en diseño inclusivo y accesibilidad web.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Qué diferencia a Punchall de otras empresas tecnológicas?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Diferenciación" class="faq-icon">
+      </div>
+      <p>Punchall se distingue por su enfoque inclusivo y su compromiso con la calidad. No solo desarrollamos soluciones tecnológicas avanzadas, sino que también nos aseguramos de que sean accesibles y útiles para una amplia gama de usuarios.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Cómo puedo apoyar las iniciativas inclusivas de Punchall?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Apoyo" class="faq-icon">
+      </div>
+      <p>Puedes apoyar nuestras iniciativas inclusivas participando en nuestras campañas de crowdfunding, compartiendo nuestro trabajo en redes sociales, o colaborando con nosotros en proyectos que promuevan la accesibilidad y la inclusión. Cualquier forma de apoyo contribuye a avanzar nuestra misión de hacer la tecnología accesible para todos.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Punchall trabaja con clientes internacionales?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Clientes Internacionales" class="faq-icon">
+      </div>
+      <p>Sí, Punchall tiene la capacidad de trabajar con clientes internacionales. Gracias a nuestra experiencia en proyectos remotos y nuestra habilidad para comunicarnos en diferentes idiomas, podemos ofrecer nuestros servicios a nivel global.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Ofrecen soporte técnico después de la entrega del proyecto?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Soporte Técnico" class="faq-icon">
+      </div>
+      <p>Sí, ofrecemos soporte técnico continuo después de la entrega del proyecto. Nos aseguramos de que nuestras soluciones funcionen correctamente y estamos disponibles para realizar ajustes o mejoras según las necesidades del cliente.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Cómo se estructura el proceso de trabajo en Punchall?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Proceso de Trabajo" class="faq-icon">
+      </div>
+      <p>Nuestro proceso de trabajo comienza con una consulta inicial para entender las necesidades del cliente. A partir de ahí, desarrollamos un plan de proyecto detallado, seguido por la fase de desarrollo, pruebas rigurosas y la entrega final. Mantenemos una comunicación constante con el cliente en cada etapa para asegurar que el proyecto se desarrolle según lo planeado.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Cuánto tiempo tarda Punchall en completar un proyecto?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Tiempo" class="faq-icon">
+      </div>
+      <p>El tiempo de finalización de un proyecto depende de su complejidad y alcance. Durante la fase inicial de planificación, proporcionamos una estimación del tiempo necesario para completar el trabajo. Nos esforzamos por cumplir con los plazos acordados y mantener una alta calidad en la entrega.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-title">
+        <h3>¿Punchall ofrece servicios personalizados?</h3>
+        <img src="../assets/img/iconos/prgunta.png" alt="Icono de Personalización" class="faq-icon">
+      </div>
+      <p>Sí, todos nuestros servicios son altamente personalizados para satisfacer las necesidades específicas de cada cliente. Ya sea que necesites un desarrollo de software a medida, una aplicación móvil única, o soluciones de accesibilidad, trabajaremos contigo para crear un producto que cumpla con tus expectativas y requisitos.</p>
+    </div>
+
+  </div>
+  <div class="background-effects"></div>
+</section>
+
+
+<!----FOOTER------>
+<footer class="footer__container">
+  <div class="footer__content">
+    <div class="footer__logo">
+      <a href="index.html"><img src="../assets/img/ico.png" alt="Punchall Logo">
+      </a>
+      <p class="paf">Punchall</p>
+    </div>
+    <div class="footer__links">
+      <h4>Enlaces Rápidos</h4>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+        <li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li><a href="PF.html">Preguntas Frecuentes</a></li>
+      </ul>
+    </div>
+    <div class="footer__services">
+    <h4>Servicios</h4>
+    <ul>
+      <li><a href="Servicios.html">Desarrollo de Software</a></li>
+      <li><a href="Servicios.html">Aplicaciones Móviles</a></li>
+      <li><a href="Servicios.html">Creación de Páginas Web</a></li>
+      <li><a href="Servicios.html">Consultoría</a></li>
+      <li><a href="Servicios.html">Soporte</a></li>
+    </ul>
+  </div>
+    <div class="footer__services">
+      <h4>Responsabilidad Social</h4>
+      <ul>
+        <li><a href="equipo.html">Diversidad e Inclusión</a></li>
+        <li><a href="equipo.html#nuestroequipo">Nuestro Equipo</a></li>
+        <li><a href="ResponsabilidadSocial.html">Iniciativas</a></li>
+        <li><a href="Colaboracion.html#donacion">Donaciones</a></li>
+        <li><a href="Colaboracion.html#comocolaborar">Cómo Colaborar</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__social">
+      <h4>Síguenos</h4>
+      <div class="social__icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/punchall-sac-7a2020332/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/51934082901" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; 2024 Punchall. Todos los derechos reservados.</p>
+  </div>
+</footer>
+<!----FIN FOOTER------>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,998 @@
+
+/** CARRUSL **/
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(87,119,142);
+    background: linear-gradient(90deg, rgba(87,119,142,1) 0%, rgba(120,13,129,1) 38%, rgba(139,33,121,1) 45%, rgba(0,255,248,1) 100%);}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+
+.carousel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    z-index: 1;
+    opacity: 0.7;
+}
+
+
+.carousel-item {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: left;
+}
+
+
+.carousel-content {
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: -250px;
+    text-align: center;
+}
+
+.carousel-content h2 {
+    font-size: 4rem;
+}
+
+.carousel-content p {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-background {
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #00ffff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-content button a {
+    color: #000000;
+    text-decoration: black !important;
+}
+
+.carousel-content button:hover {
+    background-color: #7bffba;
+}
+
+.señalador {
+    width: 600px;
+    height: auto;
+    margin-top: 400px;
+}
+
+
+/* FIN CARRUSL */
+
+/*PR*/
+/* Estilos para la sección de presentación */
+.presentation-section {
+    position: relative;
+    padding: 60px 0;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(135deg , #6fb9e3, #11673a);
+}
+
+.presentation-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0a192f, #00bcd4);
+
+    filter: brightness(1.1);
+    z-index: 0;
+    transition: opacity 0.5s ease;
+}
+
+.presentation-content {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    z-index: 1;
+}
+
+.text-overlay {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo y animación del encabezado */
+.heading {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #0c0c0c;
+    text-shadow: 0 0 20px rgba(255, 255, 255,1);
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Estilo y animación de las capas de texto */
+.text-layer {
+    position: relative;
+    max-width: 800px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(87, 87, 87, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    opacity: 1;
+    transform: scale(0.8) rotate(5deg);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    animation: bounceIn 1s ease-out;
+}
+
+.text-layer.show {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+.text-layer:nth-child(even) {
+    animation: floatIn 1s ease-out;
+}
+
+.text-layer:nth-child(odd) {
+    animation: floatIn 1.2s ease-out;
+}
+
+.cta {
+    font-size: 1.2em;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #ffffff; /* Color coral cálido */
+}
+
+.btn-learn-more {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #000000;
+    background: #02ffff; /* Amarillo cálido */
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background: #ffa726;
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Animaciones */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1) rotate(10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) rotate(-5deg);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-10px) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+}
+@media (max-width: 768px) {
+    .vision-mission-cards {
+        gap: 25px; /* Reduce ligeramente el espacio en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .vision-mission-cards {
+        gap: 20px; /* Reduce aún más el espacio en pantallas muy pequeñas */
+    }
+}
+/*FIN PR*/
+
+
+/* Sección Visión y Misión */
+.vision-mission {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Título de la sección */
+.section-title {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Tarjetas de Visión y Misión */
+.vision-mission-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.vision-mission-card {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.vision-mission-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.card-title {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.card-content p {
+    font-size: 1.125rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Animaciones para los gráficos */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.vision-mission-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Media Queries para Responsividad de la Sección de Visión y Misión */
+
+/* Para dispositivos con ancho máximo de 768px */
+@media (max-width: 768px) {
+    .vision-mission {
+        padding: 80px 0; /* Reduce el padding */
+    }
+
+    .section-title {
+        font-size: 2.5rem; /* Ajusta el tamaño del título */
+        margin-bottom: 30px; /* Reduce el margen inferior */
+    }
+
+    .vision-mission-cards {
+        flex-direction: column; /* Coloca las tarjetas en columna */
+        align-items: center; /* Centra las tarjetas */
+    }
+
+    .vision-mission-card {
+        width: 100%; /* Asegura que las tarjetas ocupen el 100% del ancho */
+        max-width: 400px; /* Establece un ancho máximo para las tarjetas */
+        margin-bottom: 20px; /* Agrega un margen inferior para separación */
+    }
+
+    .card-title {
+        font-size: 1.8rem; /* Ajusta el tamaño del título de la tarjeta */
+    }
+
+    .card-content p {
+        font-size: 1rem; /* Ajusta el tamaño del párrafo en la tarjeta */
+    }
+}
+
+/* Para dispositivos con ancho máximo de 576px */
+@media (max-width: 576px) {
+    .vision-mission {
+        padding: 60px 0; /* Reduce aún más el padding */
+    }
+
+    .section-title {
+        font-size: 2rem; /* Ajusta el tamaño del título */
+        margin-bottom: 20px; /* Reduce el margen inferior */
+    }
+
+    .vision-mission-card {
+        padding: 20px; /* Reduce el padding de las tarjetas */
+    }
+
+    .card-image {
+        height: 150px; /* Ajusta la altura de la imagen */
+    }
+
+    .card-title {
+        font-size: 1.6rem; /* Ajusta el tamaño del título de la tarjeta */
+    }
+
+    .card-content p {
+        font-size: 0.9rem; /* Ajusta el tamaño del párrafo en la tarjeta */
+    }
+}
+
+
+
+/*fin mision*/
+/* SKILLS */
+
+.skills-section {
+    text-align: center;
+    padding: 8rem 5%;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    color: #ffffff;
+}
+
+.skills-title {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #02ffff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    justify-items: center;
+    padding: 0 2rem;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 50%;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    animation: float 6s ease-in-out infinite;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Added to center the text below the image */
+}
+
+.skill-card img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.skill-card span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    color: #142426;
+}
+
+.skill-card:hover {
+    transform: translateY(-15px) scale(1.08);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+
+.skill-card:hover img {
+    transform: rotateY(360deg) scale(1.1);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    .skills-title {
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .skill-card {
+        width: 200px; /* Aumentar tamaño de las tarjetas */
+        height: 200px;
+    }
+
+    .skill-card img {
+        width: 70px; /* Ajustar tamaño de las imágenes */
+    }
+
+    .skill-card span {
+        font-size: 1.2rem; /* Mantener tamaño de texto más grande */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-title {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .skills-container {
+        padding: 0 1rem; /* Ajustar padding en pantallas pequeñas */
+    }
+
+    .skill-card {
+        width: 220px; /* Aumentar tamaño de las tarjetas */
+        height: 220px;
+    }
+
+    .skill-card img {
+        width: 80px; /* Ajustar tamaño de las imágenes */
+    }
+
+    .skill-card span {
+        font-size: 1.2rem; /* Mantener tamaño de texto más grande */
+    }
+}
+/* FIN SKILLS */
+
+/*Sr*/
+/* Sección de Servicios */
+/* Sección de Servicios */
+/* Sección de Servicios */
+.services-section {
+    position: relative;
+    padding: 50px 20px; /* Aumentar el relleno horizontal */
+    text-align: center;
+    background: linear-gradient(135deg, #001f3f, #39ff14);
+    color: #fff;
+}
+
+.services-section .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-section h2 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: #00eaff; /* Color brillante para el título */
+}
+
+/* Fondo con patrón sutil */
+.services-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/grey-hex.png');
+    opacity: 0.2;
+    z-index: 1;
+}
+
+/* Grid de servicios */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilo de las tarjetas de servicio */
+.service-card {
+    width: 250px;
+    height: 300px;
+    background: rgba(20, 20, 20, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #000000;
+    padding: 20px; /* Espaciado interno */
+}
+
+.section-title1{
+    color: #000000;
+    text-shadow: 0 0 20px rgba(255, 255, 255,1);
+
+    font-size:3rem;
+    text-align: center;
+    padding: 1rem 1%;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.3), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.6);
+    background-color: rgba(20, 20, 20, 0.9);
+}
+
+/* Estilo del título y descripción */
+.service-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #00eaff;
+}
+
+.service-content p {
+    font-size: 1.1rem;
+}
+
+/* Estilo del botón de exploración */
+.explore-button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #000000;
+    background: #00eaff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5);
+}
+
+.explore-button:hover {
+    background: #00b3e6;
+    transform: scale(1.05);
+}
+
+.explore-button:active {
+    background: #009ac6;
+}
+
+@media (max-width: 768px) {
+    .services-section h2 {
+        font-size: 3rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+
+    .service-card {
+        width: 200px; /* Tamaño de tarjeta más pequeño en pantallas pequeñas */
+        height: 250px; /* Ajustar la altura de la tarjeta */
+    }
+
+    .service-content h3 {
+        font-size: 1.4rem; /* Tamaño de fuente más pequeño para títulos de servicios */
+    }
+
+    .service-content p {
+        font-size: 1rem; /* Tamaño de fuente más pequeño para descripciones */
+    }
+
+    .explore-button {
+        padding: 12px 24px; /* Ajustar el tamaño del botón */
+        font-size: 1rem; /* Tamaño de fuente más pequeño para el botón */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-section {
+        padding: 30px 10px; /* Menos padding en pantallas muy pequeñas */
+    }
+
+    .services-section h2 {
+        font-size: 2.5rem; /* Tamaño de fuente más pequeño en dispositivos muy pequeños */
+    }
+
+    .service-card {
+        width: 150px; /* Tamaño de tarjeta aún más pequeño en pantallas muy pequeñas */
+        height: 200px; /* Ajustar la altura de la tarjeta */
+    }
+
+    .service-content h3 {
+        font-size: 1.2rem; /* Más pequeño en dispositivos muy pequeños */
+    }
+
+    .service-content p {
+        font-size: 0.9rem; /* Más pequeño en dispositivos muy pequeños */
+    }
+
+    .explore-button {
+        padding: 10px 20px; /* Ajustar el tamaño del botón en pantallas muy pequeñas */
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
+    }
+}
+
+
+
+/*fin Sr*/
+/*NOTA*/
+/* Sección de Donación */
+/* Sección de Donación */
+.donation-section {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #4ca1af, #c4e0e5);
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.donation-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.donation-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #000000;
+    text-shadow: 0 0 20px rgb(255, 255, 255,1);
+
+}
+
+.donation-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.donation-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.donation-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5);
+}
+
+.donation-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.7);
+}
+
+/* Estilo del botón de donación */
+.donate-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #000000;
+    background: #00eaff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5);
+}
+
+.donate-button:hover {
+    background: #00b3e6;
+    transform: scale(1.05);
+}
+
+.donate-button:active {
+    background: #009ac6;
+}
+
+@media (max-width: 768px) {
+    .donation-section h2 {
+        font-size: 2.5rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+
+    .donation-section p {
+        font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+
+    .donation-image {
+        width: 120px; /* Tamaño de imagen más pequeño en pantallas pequeñas */
+        height: 120px;
+    }
+
+    .donate-button {
+        padding: 10px 20px; /* Ajusta el tamaño del botón en pantallas pequeñas */
+        font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .donation-section {
+        padding: 30px 10px; /* Menos padding en pantallas muy pequeñas */
+    }
+
+    .donation-section h2 {
+        font-size: 2rem; /* Más pequeño en dispositivos muy pequeños */
+    }
+
+    .donation-section p {
+        font-size: 0.9rem; /* Más pequeño en dispositivos muy pequeños */
+    }
+
+    .donation-image {
+        width: 100px; /* Tamaño de imagen más pequeño en pantallas muy pequeñas */
+        height: 100px;
+    }
+
+    .donate-button {
+        padding: 8px 16px; /* Ajusta el tamaño del botón en pantallas muy pequeñas */
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño en pantallas muy pequeñas */
+    }
+}
+
+/*FIN NOTA*/
+
+/* Para dispositivos con ancho máximo de 768px (Tablets verticales) */
+@media (max-width: 768px) {
+    .carousel-content h2 {
+        font-size: 2.5rem; /* Aumenta el tamaño del título */
+    }
+
+    .carousel-content p {
+        font-size: 1.5rem; /* Aumenta el tamaño del párrafo */
+    }
+
+    .btn-learn-more,
+    .explore-button {
+        font-size: 1.2rem; /* Aumenta el tamaño del botón */
+        padding: 15px 30px; /* Aumenta el tamaño del padding del botón */
+    }
+
+    .carousel-content {
+        text-align: center; /* Centrar el texto */
+        justify-content: center; /* Asegura que los elementos estén centrados verticalmente */
+        padding: 10px; /* Añadir un poco de padding para evitar que el texto toque los bordes */
+        margin: 0; /* Asegura que no haya margen que cause espacio en blanco */
+    }
+
+    .carousel img {
+        display: none; /* Ocultar imagen del carrusel */
+    }
+}
+
+/* Para dispositivos con ancho máximo de 576px (Smartphones) */
+@media (max-width: 576px) {
+    .carousel-content h2 {
+        font-size: 2rem; /* Ajusta el tamaño del título */
+    }
+
+    .carousel-content p {
+        font-size: 1.2rem; /* Ajusta el tamaño del párrafo */
+    }
+
+    .btn-learn-more,
+    .explore-button {
+        font-size: 1.1rem; /* Ajustar tamaño del botón */
+        padding: 12px 25px; /* Botones más grandes */
+    }
+
+    .carousel-content {
+        text-align: center; /* Asegura que el contenido del carrusel esté centrado */
+        padding: 8px; /* Añadir un poco de padding */
+        margin: 0; /* Asegura que no haya margen que cause espacio en blanco */
+    }
+
+    .carousel img {
+        display: none; /* Ocultar imagen en pantallas más pequeñas */
+    }
+}
+
+/* Para dispositivos con ancho máximo de 415px */
+@media (max-width: 415px) {
+    .carousel-content h2 {
+        font-size: 1.8rem; /* Ajusta el tamaño del título */
+    }
+
+    .carousel-content p {
+        font-size: 1rem; /* Ajusta el tamaño del párrafo */
+    }
+
+    .btn-learn-more,
+    .explore-button {
+        font-size: 1rem; /* Ajustar tamaño del botón */
+        padding: 10px 20px; /* Botones más grandes */
+    }
+
+    .carousel-content {
+        text-align: center; /* Asegura que el contenido del carrusel esté centrado */
+        padding: 6px; /* Ajustar el padding */
+        margin: 0; /* Asegura que no haya margen que cause espacio en blanco */
+    }
+
+
+    .carousel img {
+        display: none; /* Ocultar la imagen */
+    }
+}
+
+/* Para dispositivos con ancho máximo de 394px (Smartphones pequeños) */
+@media (max-width: 394px) {
+    .carousel-content h2 {
+        font-size: 1.5rem; /* Ajusta el tamaño del título */
+    }
+
+    .carousel-content p {
+        font-size: 1rem; /* Ajusta el tamaño del párrafo */
+    }
+
+    .btn-learn-more,
+    .explore-button {
+        font-size: 1rem; /* Ajustar tamaño del botón */
+        padding: 10px 20px; /* Botones más grandes */
+    }
+
+    .carousel-content {
+        text-align: center; /* Asegura que el contenido del carrusel esté centrado */
+        padding: 6px; /* Ajustar el padding */
+        margin: 0; /* Asegura que no haya margen que cause espacio en blanco */
+    }
+
+    .carousel img {
+        display: none; /* Ocultar la imagen */
+    }
+}
+
+/* Para dispositivos con ancho máximo de 400px (Smartphones pequeños) */
+@media (max-width: 400px) {
+    .carousel-content h2 {
+        font-size: 1.5rem; /* Ajusta el tamaño del título */
+    }
+
+    .carousel-content p {
+        font-size: 1rem; /* Ajusta el tamaño del párrafo */
+    }
+
+    .btn-learn-more,
+    .explore-button {
+        font-size: 1rem; /* Ajustar tamaño del botón */
+        padding: 10px 20px; /* Botones más grandes */
+    }
+
+    .carousel-content {
+        text-align: center; /* Asegura que el contenido del carrusel esté centrado */
+        padding: 6px; /* Ajustar el padding */
+        margin: 0; /* Asegura que no haya margen que cause espacio en blanco */
+    }
+
+    .carousel img {
+        display: none; /* Ocultar la imagen */
+    }
+}

@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+/* NAV */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(87,119,142);
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+.logo p {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff9900;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+
+.color-mode-container {
+    margin: 10px;
+    text-align: center;
+}
+
+
+.color-mode-select {
+    padding: 8px; /* Aumentar el padding para una mejor experiencia táctil */
+    border-radius: 10px; /* Esquinas más redondeadas */
+    border: 1px solid #777;
+    background: linear-gradient(to right, #ffffff, #e6f7ff);
+    font-size: 0.9rem; /* Aumentar ligeramente el tamaño de la fuente */
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+    cursor: pointer;
+    width: 100%; /* Ajustar el ancho para ocupar el contenedor */
+    max-width: 250px; /* Limitar el ancho máximo */
+    outline: none; /* Quitar el borde de enfoque predeterminado */
+}
+
+/* Efecto al hacer hover */
+.color-mode-select:hover {
+    background: linear-gradient(to right, #e6f7ff, #b3e0ff);
+    border-color: #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Aumentar la sombra en hover */
+}
+
+/* Efecto al recibir foco */
+.color-mode-select:focus {
+    border-color: #007BFF; /* Color del borde en foco */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Efectos para los modos de color */
+body.deuteranopia {
+    filter: grayscale(80%) contrast(1.2) brightness(1.1);
+    transition: filter 0.5s ease-in-out;
+}
+
+body.protanopia {
+    filter: grayscale(50%) sepia(20%) saturate(1.2) hue-rotate(-30deg);
+    transition: filter 0.5s ease-in-out;
+}
+
+body.tritanopia {
+    filter: grayscale(50%) sepia(20%) saturate(1.2) hue-rotate(90deg);
+    transition: filter 0.5s ease-in-out;
+}
+
+/* Transición general para el cuerpo */
+body {
+    transition: filter 0.5s ease-in-out;
+}
+
+/* Estilo del texto asociado al select */
+.txtT {
+    margin-top: 5px; /* Ajustar el margen superior */
+    font-size: 0.75rem; /* Ajustar el tamaño de la fuente */
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Añadir sombra al texto para mejorar la legibilidad */
+}
+/*FOT*/
+
+.footer__container {
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.logo-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.paf {
+    margin-top: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-link img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.footer__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__logo img {
+    width: auto;
+    height: 100px;
+}
+
+
+.footer__logo p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+.footer__links,
+.footer__services {
+    text-align: center;
+}
+
+.footer__links h4,
+.footer__services h4,
+.footer__social h4 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer__links ul,
+.footer__services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__links ul li,
+.footer__services ul li {
+    margin: 10px 0;
+}
+
+.footer__links ul li a,
+.footer__services ul li a {
+    color: #9fd3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+}
+.footer__links,
+.footer__services {
+    text-align: left;
+}
+.footer__links ul li a:hover,
+.footer__services ul li a:hover {
+    color: #ffd700;
+}
+
+.footer__social {
+    text-align: center;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social__icons a {
+    color: #9fd3c7;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social__icons a:hover {
+    color: #ffd700;
+}
+
+.footer__bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    color: #9fd3c7;
+}
+@media (max-width: 768px) {
+    .nav-links {
+
+        flex-direction: column;
+        width: 100%;
+        background: rgb(87,119,142);
+        background: linear-gradient(135deg, #2b5876, #4e4376);
+        position: absolute;
+        top: 90px;
+        left: 0;
+        text-align: center;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        max-height: 0;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        max-height: 1000px;
+        display: flex; /* Mantener flexibilidad */
+        overflow: auto;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+}
+
+body {
+    padding-top: 80px;
+}
+
+
+@media (max-width: 600px) {
+    .footer__logo p {
+        font-size: 1.2rem; /* Tamaño más pequeño para texto */
+    }
+
+    .footer__links h4,
+    .footer__services h4,
+    .footer__social h4 {
+        font-size: 1rem; /* Tamaño más pequeño para títulos */
+    }
+
+    .footer__links ul li,
+    .footer__services ul li {
+        margin: 5px 0; /* Margen reducido */
+    }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 900px) {
+    .footer__logo p {
+        font-size: 1.3rem; /* Tamaño ajustado para texto */
+    }
+
+    .footer__links h4,
+    .footer__services h4,
+    .footer__social h4 {
+        font-size: 1.1rem; /* Tamaño ajustado para títulos */
+    }
+}
+
+/* Para pantallas grandes (escritorios) */
+@media (min-width: 901px) {
+    .footer__logo p {
+        font-size: 1.5rem; /* Tamaño grande para texto */
+    }
+
+    .footer__links h4,
+    .footer__services h4,
+    .footer__social h4 {
+        font-size: 1.2em; /* Mantener tamaño original para títulos */
+    }
+}

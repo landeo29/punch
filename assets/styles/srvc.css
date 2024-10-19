@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para la sección de servicios */
+.services {
+    position: relative;
+    background: radial-gradient(circle at 50% 50%, #1e3c72, #2a5298, #1f77d0);
+    padding: 100px 0;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fondo animado con cubos */
+.floating-cubes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.cube {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    animation: rotate 20s linear infinite;
+    z-index: -1;
+    transform-origin: center;
+}
+
+/* Cubos interactivos que rotan y flotan */
+.cube1 {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 15%;
+    animation-duration: 10s;
+}
+
+.cube2 {
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 40%;
+    animation-duration: 15s;
+}
+
+.cube3 {
+    width: 40px;
+    height: 40px;
+    bottom: 30%;
+    right: 20%;
+    animation-duration: 12s;
+}
+
+.cube4 {
+    width: 100px;
+    height: 100px;
+    bottom: 10%;
+    right: 40%;
+    animation-duration: 18s;
+}
+
+/* Animación de rotación */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: rotate(180deg) scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+        opacity: 0.5;
+    }
+}
+
+/* Efecto de seguimiento del mouse en los cubos */
+.services:hover .floating-cubes .cube {
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(45deg) translate(20px);
+}
+
+/* Ajuste de márgenes y paddings */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: 50px;
+    color: #000000;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+/* Grid Responsivo */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+/* Tarjetas de servicios */
+.service {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    border: 3px solid #ff0000;
+}
+
+/* Efecto de flotación de las tarjetas */
+.service:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto flotante de las imágenes */
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-bottom: 3px solid #0a3d62;
+}
+
+.service:hover img {
+    transform: scale(1.1);
+}
+
+/* Ajuste de tipografía */
+.service h3 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    color: #0a3d62;
+}
+
+.service p {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* INCLUSIVO */
+/* Sección de inclusión con formas orgánicas */
+.inclusion-section {
+    background: linear-gradient(to right, #3494e6, #ec6ead);
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.inclusion-header h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.inclusion-header p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+}
+
+/* Estilo de los ítems con formas curvas */
+.inclusion-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.inclusion-item {
+    position: relative;
+    padding: 40px;
+    width: 300px;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.4s ease;
+    background: #ffffff55;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.inclusion-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Imágenes flotantes */
+.inclusion-item img {
+    width: 80px;
+    margin-bottom: 20px;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Formas curvas y orgánicas para cada ítem */
+.shape-one {
+    background: radial-gradient(circle at 50% 50%, #acb6e5, #86fde8);
+}
+
+.shape-two {
+    background: radial-gradient(circle at 50% 50%, #fd79a8, #ff7675);
+}
+
+.shape-three {
+    background: radial-gradient(circle at 50% 50%, #55efc4, #00b894);
+}
+
+.shape-four {
+    background: radial-gradient(circle at 50% 50%, #ffeaa7, #fab1a0);
+}
+
+/* Fondo dinámico con movimiento */
+.inclusion-section:before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: move 10s infinite alternate;
+    z-index: -1;
+}
+
+.inclusion-section .ttinclisivo {
+    color: #3f10cc;
+}
+
+.inclusion-section .txtinclusivo {
+    color: black;
+}
+
+.inclusion-section:after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: move 8s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes move {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(30px, 30px) rotate(10deg); }
+    100% { transform: translate(0, 0) rotate(20deg); }
+}
+
+/* Media Queries para la sección de Inclusión */
+
+/* Para pantallas menores de 1200px */
+@media (max-width: 1200px) {
+    .inclusion-container {
+        flex-direction: row; /* Mantiene una disposición en fila */
+        justify-content: center; /* Centra los ítems */
+        flex-wrap: wrap; /* Permite que los ítems se envuelvan si no caben en una fila */
+    }
+
+    .inclusion-item {
+        width: 280px; /* Ajusta el ancho de los ítems */
+        margin: 20px; /* Aumenta el margen entre los ítems */
+    }
+}
+
+/* Para pantallas menores de 768px */
+@media (max-width: 768px) {
+    .inclusion-header h2 {
+        font-size: 2.5rem; /* Reduce el tamaño de la fuente del título en inclusión */
+    }
+
+    .inclusion-header p {
+        font-size: 1rem; /* Reduce el tamaño de la fuente del texto */
+        margin: 0 20px; /* Ajusta el margen del texto */
+    }
+
+    .inclusion-container {
+        flex-direction: column; /* Cambia a una disposición de columna en pantallas más pequeñas */
+        align-items: center; /* Centra los ítems en la columna */
+    }
+
+    .inclusion-item {
+        width: 90%; /* Asegura que los ítems ocupen más ancho en móviles */
+        margin: 10px 0; /* Espaciado vertical entre los ítems */
+        padding: 30px; /* Ajusta el padding interno */
+    }
+}
+
+/* Para pantallas menores de 480px */
+@media (max-width: 480px) {
+    .inclusion-header h2 {
+        font-size: 2rem; /* Reduce el tamaño del encabezado aún más */
+    }
+
+    .inclusion-header p {
+        font-size: 0.9rem; /* Reduce el tamaño del texto para móviles pequeños */
+        margin: 0 10px; /* Ajusta el margen para un mejor ajuste */
+    }
+
+    .inclusion-item {
+        width: 100%; /* Asegura que los ítems ocupen todo el ancho disponible */
+        margin: 10px 0; /* Mantiene el espaciado vertical */
+        padding: 20px; /* Ajusta el padding interno */
+    }
+}
