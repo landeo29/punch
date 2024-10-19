@@ -58,7 +58,7 @@
                     <input type="text" id="name" placeholder="Nombre" required>
                     <input type="email" id="email" placeholder="Correo Electrónico" required>
                     <textarea id="message" placeholder="Mensaje" rows="4" required></textarea>
-                    <button type="submit">Enviar</button>
+                    <button onclick="window.location.href='mailto:contacto@punchall.dev?subject=Asunto%20del%20Correo&body=Este%20es%20el%20mensaje%20que%20quiero%20enviar.'">Enviar Correo</button>
                 </form>
             </div>
         </div>
@@ -139,12 +139,7 @@
 <!--Fin contacto--->
 <script src="../assets/js/main.js"></script>
 <!--mail-->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-    (function() {
-        emailjs.init("I2pgp1Hz4DkdxOFyH");
-    })();
-</script>
+
 
 
 </body>
