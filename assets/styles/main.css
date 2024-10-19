@@ -246,6 +246,7 @@
     }
 }
 
+/* Media Queries para la sección de presentación */
 
 @media (max-width: 1200px) {
     .heading {
@@ -310,6 +311,27 @@
     }
 }
 
+/* Media Queries para pantallas de 400px o menos */
+@media (max-width: 400px) {
+    .heading {
+        font-size: 1.8em; /* Ajuste adicional para pantallas muy pequeñas */
+    }
+
+    .text-layer {
+        max-width: 95%; /* Mantener el ancho ajustado */
+        margin: 5px auto; /* Margen automático para centrar */
+        padding: 5px; /* Reduce el padding */
+    }
+
+    .cta {
+        font-size: 0.8em; /* Tamaño más pequeño para el texto de llamada a la acción */
+    }
+
+    .btn-learn-more {
+        padding: 6px 10px; /* Reduce el padding del botón */
+        font-size: 0.7em; /* Tamaño más pequeño para el botón */
+    }
+}
 
 /*FIN PR*/
 
